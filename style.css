@@ -1,0 +1,260 @@
+body {
+    overflow-x: hidden;
+    font-family: monospace;
+    background: #f0f0f0;
+    margin: 0;
+}
+
+#login-form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    width: 98%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container-inputter {
+    gap: 12px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 12px;
+}
+
+#kasir-content {
+    padding-top: 0%;
+    padding-left: 0%;
+    width: 90%;
+    border: 0px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    font-weight: 700;
+    background: rgb(180, 180, 180);
+    color: rgb(0, 0, 0);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.button-container button {
+    border-top: 8px solid rgb(240, 240, 240);
+    border-left: 8px solid rgb(205, 205, 205);
+    border-right: 3px solid rgb(156, 156, 156);
+    border-bottom: 3px solid rgb(156, 156, 156);
+    cursor: pointer;
+    margin: 12px;
+    padding: 12px;
+    background-color: rgb(221, 221, 221);
+    font-weight: 700;
+    color: rgb(40, 40, 40);
+}
+
+.button-container button:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.input-container {
+    margin-left: 12px;
+    border-top: 10px solid rgb(240, 240, 240);
+    border-left: 10px solid rgb(205, 205, 205);
+    border-right: 5px solid rgb(156, 156, 156);
+    border-bottom: 5px solid rgb(156, 156, 156);
+    width: 50%;
+    padding: 8px;
+    overflow: hidden;
+    background-color: rgb(220, 220, 220);
+    margin-bottom: 20px;
+}
+
+.total-harga {
+    font-family: monospace;
+    width: auto;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+}
+
+.tambah-barangdiv {
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+    border-left: 8px solid rgb(205, 205, 205);
+    border-bottom: 5px solid rgb(156, 156, 156);
+}
+
+.input-container input {
+    padding: 10px;
+    width: auto;
+    outline: none;
+    border: 3px solid #ccc; /* Menambahkan border setebal 3 pixel */
+}
+
+.delete-button {
+    cursor: pointer;
+    padding: 12px 50px;
+    border-top: 6px solid rgb(240, 240, 240);
+    border-left: 6px solid rgb(205, 205, 205);
+    border-right: 3px solid rgb(156, 156, 156);
+    border-bottom: 3px solid rgb(156, 156, 156);
+    background-color: rgb(228, 228, 228);
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.currency-label {
+    color: rgb(90, 90, 90);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#change-container {
+    font-weight: 600;
+    padding: 6px;
+    font-size: 20px;
+    color: rgb(29, 29, 29);
+}
+
+#history {
+    padding: 12px;
+    margin-top: 20px;
+    padding: 1px;
+    background-color: rgb(114, 114, 114);
+    color: #fff;
+}
+
+#history ul {
+    height: 0px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#history ul li {
+    border-top: 5px solid rgb(240, 240, 240);
+    border-left: 5px solid rgb(205, 205, 205);
+    border-right: 2px solid rgb(156, 156, 156);
+    border-bottom: 2px solid rgb(156, 156, 156);
+    margin-bottom: 5px;
+    background-color: rgb(209, 209, 209);
+    color: black;
+}
+
+.history-item {
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #747474;
+}
+
+#login-button {
+    cursor: pointer;
+    margin: 12px;
+    padding: 10px 30px;
+}
+
+#login-status {
+    margin: 12px;
+    margin-top: 0px;
+}
+
+#login-form {
+    margin: 12px;
+    padding: 12px;
+
+}
+
+#total-price {
+    color: rgb(52, 52, 52);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.header-kasir {
+    border-top: 8px solid rgb(240, 240, 240);
+    border-right: 5px solid rgb(77, 77, 77);
+    border-bottom: 5px solid rgb(79, 79, 79);
+    width: auto;
+    height: 40px;
+    background-color: rgb(187, 187, 187);
+    margin-bottom: 12px;
+}
+
+.header-kasir li {
+    list-style: none;
+}
+
+.header-kasir li a{
+    text-decoration: none;
+    color: black;
+    border-top: 5px solid rgb(240, 240, 240);
+    border-left: 5px solid rgb(205, 205, 205);
+    border-right: 2px solid rgb(156, 156, 156);
+    border-bottom: 2px solid rgb(156, 156, 156);
+    padding: 4px;
+}
+
+.navigasi {
+    border-top: 8px solid rgb(240, 240, 240);
+    border-left: 8px solid rgb(205, 205, 205);
+    border-bottom: 5px solid rgb(156, 156, 156);
+    display: none;
+    position: relative;
+    width: 200px; 
+    height: 95%; 
+    background-color: rgb(186, 186, 186);
+    color: #fff; 
+    padding: 20px;
+}
+
+.navigasi a {
+    padding: 12px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 17px;
+    color: black;
+    background-color: rgb(207, 207, 207);
+    margin-bottom: 12px;
+    display: block;
+    border-top: 5px solid rgb(240, 240, 240);
+    border-left: 5px solid rgb(205, 205, 205);
+    border-right: 2px solid rgb(156, 156, 156);
+    border-bottom: 2px solid rgb(156, 156, 156);
+}
+
+.navigasi a:hover {
+    text-decoration: underline;
+}

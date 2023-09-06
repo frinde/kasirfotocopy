@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Kasir</title>
+</head>
+<body>
+            <!-- Form login -->
+            <div id="login-form">
+                <div class="input-container ">
+                    <label for="username"><i class="fa fa-user" aria-hidden="true"></i> Username:</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="input-container">
+                    <label for="password"><i class="fa fa-lock" aria-hidden="true"></i> Password:</label>
+                    <input type="password" id="password">
+                </div>
+                <button id="login-button">Login</button>
+                <div id="login-status"><i class="fa fa-thumb-tack" aria-hidden="true"></i> masukkan username dan password dengan benar</div> <!-- Tempatkan teks status login di sini -->
+            </div>
+
+      <!-- Konten kasir --> 
+      <section class="main">
+              <div class="navigasi fixed" id="navbar">
+         <h1 style="font-family: arial; color: rgb(42, 42, 42);"><i class="fa fa-desktop" aria-hidden="true"></i> Faris fotocopy kasir</h1>
+        <a href="#"><i class="fa fa-calculator" aria-hidden="true"></i>&nbsp;Barang</a>
+      </div>
+      
+      
+    <div class="container-inputter" id="kasir-content" style="display:none;">
+        <div class="header-kasir">
+            <ul>
+                <li><a href="#">Window</a></li>
+            </ul>
+        </div>
+
+        <div class="input-container total-harga">
+            <span class="currency-label">Total : &nbsp;</span>
+            <span id="total-price">Rp 0,00</span> 
+        </div>
+        <div id="change-container">
+            <span class="currency-label">Total Kembalian:</span>
+            <span id="change">Rp 0,00</span> 
+        </div>
+           <div id="container">
+
+        <div class="container-inputter tambah-barangdiv">
+
+        <div class="input-container ">
+            <label for="item-name"><i class="fa fa-users" aria-hidden="true"></i> Nama Barang:</label>
+            <input type="text" id="item-name">
+        </div>
+
+        <div class="input-container">
+            <label for="item-quantity"><i class="fa fa-sort-numeric-desc" aria-hidden="true"></i> Jumlah:</label>
+            <input type="number" id="item-quantity">
+        </div>
+
+        <div class="input-container">
+            <label for="item-price"><i class="fa fa-money"></i> Harga Barang:</label>
+            <input type="number" step="0.01" id="item-price">
+        </div>
+
+        <div class="input-container" id="payment-form">
+            <label for="amount-paid">Jumlah Uang Pembeli:</label>
+            <input type="number" step="0.01" id="amount-paid">
+        </div>
+
+        </div>
+        
+
+        <div class="button-container">
+            <button id="add-button">Tambah Barang <i class="fa fa-plus" aria-hidden="true"></i></button>
+            <button id="calculate-change"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> Hitung Kembalian</button>
+            <button id="download-excel"><i class="fa fa-table" aria-hidden="true"></i> Unduh file .CSV</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th><i class="fa fa-users" aria-hidden="true"></i> Nama Barang</th>
+                    <th><i class="fa fa-sort-numeric-desc" aria-hidden="true"></i> Jumlah</th>
+                    <th><i class="fa fa-money"></i> Harga Barang</th>
+                    <th><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Total Harga</th>
+                    <th><i class="fa fa-hand-o-down" aria-hidden="true"></i> Action</th>
+                    <th>
+                        <div id="history">
+                        <h2>&nbsp;<i class="fa fa-history" aria-hidden="true"></i> Histori Barang Dihapus:</h2>
+                        <ul id="history-list">
+                            <!-- Histori akan ditampilkan di sini -->
+                        </ul>
+                    </div>
+                </th>
+                </tr>
+            </thead>
+            <tbody id="item-list">
+                <!-- Daftar item akan ditampilkan di sini -->
+            </tbody>
+        </table>
+    </div>
+    </div>
+      </section>
+
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>
