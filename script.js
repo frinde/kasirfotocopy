@@ -170,3 +170,23 @@ document.addEventListener("DOMContentLoaded", function () {
         link.click();
     }
 });
+
+function tampilkanDiv(divId) {
+    // Sembunyikan semua div
+    for (let i = 1; i <= 3; i++) {
+        const div = document.getElementById(`div${i}`);
+        if (div) {
+            div.style.display = 'none';
+        }
+    }
+
+    // Tampilkan div yang sesuai
+    const divToShow = document.getElementById(`div${divId}`);
+    if (divToShow) {
+        divToShow.style.display = 'block';
+    }
+}
+
+document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
