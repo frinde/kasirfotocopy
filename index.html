@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Kasir</title>
@@ -24,18 +24,25 @@
 
       <!-- Konten kasir --> 
       <section class="main">
-              <div class="navigasi fixed" id="navbar">
-         <h1 style="font-family: arial; color: rgb(42, 42, 42);"><i class="fa fa-desktop" aria-hidden="true"></i> Faris fotocopy kasir</h1>
-        <a href="#"><i class="fa fa-calculator" aria-hidden="true"></i>&nbsp;Barang</a>
+              <div class="navigasi" id="navbar">
+         <h1 style="font-family: arial; color: rgb(75, 75, 75);"> Faris fotocopy kasir</h1>
+         <button onclick="tampilkanDiv(1)" ><i class="fa fa-television" aria-hidden="true"></i>&nbsp;Kasir</button>
+         <div class="dropdown">
+            <div class="dropdown-button">Alat</div>
+            <div class="dropdown-content">
+                <a  onclick="tampilkanDiv(2)">blank</a>
+                <a onclick="tampilkanDiv(3)">blank</a>
+            </div>
+        </div>
       </div>
       
-      
+      <div id="div1">
     <div class="container-inputter" id="kasir-content" style="display:none;">
         <div class="header-kasir">
-            <ul>
-                <li><a href="#">Window</a></li>
-            </ul>
+            
         </div>
+        
+        <div class="blank"></div>
 
         <div class="input-container total-harga">
             <span class="currency-label">Total : &nbsp;</span>
@@ -101,10 +108,20 @@
         </table>
     </div>
     </div>
+</div>
+
+<div id="div2" style="display:none;">
+    <div class="header-kasir">blank#1</div>
+</div>
+
+<div id="div3" style="display:none;">
+    <div class="header-kasir">blank#2</div>
+</div>
       </section>
 
  
 
     <script src="script.js"></script>
+    
 </body>
 </html>
